@@ -42,8 +42,18 @@ export default class Order {
         return this._customerId;
     }
 
+    changeCustomer(customerId: string): void {
+        this._customerId = customerId;
+        this.validate();
+    }
+
     get items(): OrderItem[] {
         return this._items;
+    }
+
+    changeItems(items: OrderItem[]) {
+        this._items = items;
+        this.validate();
     }
 
     total(): number {
