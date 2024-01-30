@@ -6,7 +6,7 @@ export default class ProductService {
         products.forEach((product) => {
             product.changePrice((product.price * percentage) / 100 + product.price);
         });
-        
+
         return products;
     }
 

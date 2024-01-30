@@ -32,6 +32,7 @@ describe("Order unit tests", () => {
 
         const order2 = new Order("o1", "c1", [item, item2]);
         total = order2.total();
+        
         expect(total).toBe(600);
     });
 
